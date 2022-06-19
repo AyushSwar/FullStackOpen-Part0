@@ -1,0 +1,14 @@
+title     Created note on single page app
+
+note left of Browser:
+The user enters a note 
+over then pressses "save"
+end note
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Server-->Browser: 201 Created
+
+note left of Browser:
+The js-code adds the new
+note to the list of notes
+end note
