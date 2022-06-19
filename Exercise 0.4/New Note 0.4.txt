@@ -1,0 +1,21 @@
+title Exercise 0.4-Creating a New Note
+#The user creates a new note on page.
+#Then write something into the text field and clicking the submit button.
+
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/new_note
+Server-->Browser: 302-status code found
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/notes
+Server-->Browser: HTML-Code
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: main.css
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->Browser: main.js
+
+note left of Browser
+browser starts executing js-code
+that requests json data from server
+end note 
+
+
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser: data.json
